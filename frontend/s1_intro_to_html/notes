@@ -1,0 +1,32 @@
+### jan_27_mfakih
+---------------------------------------------------
+
+Here we will add all the notes needed for this course
+
+When connecting your files to a server if you launched them with just the file name then it will just show the folders in the web app, whereas if you have an index.html it will run this as default unless you specify the page you are trying to acess.
+___________________________________________________
+
+For example:
+www.frontend.com will show the blue link to acess intro_to_html
+
+www.intro_to_html will launch the index.html file even if it wasnt mentioned
+
+www.intro_to_html.index.html will run the same file as above
+
+Note that having an index.html is optional, we can have any .html file but we will have to specify it is the file we want to launch for instance:
+
+www.intro_to_html.mypage.html to run mypage
+
+
+## HTML SYNTAX:
+
+1. An HTML page is a tag language <>
+we should always start with <html>
+inside it we shall have a <head> and <body> block at least
+we can have a <title> block inside the head (this will rename the title of the website)
+
+
+2. We can use the <center> tag but it shows red since it is a legacy tag we nolonger use it instead we rely on css for styling
+
+
+---------------------------------------------------
