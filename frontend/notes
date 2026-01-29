@@ -29,4 +29,16 @@ we can have a <title> block inside the head (this will rename the title of the w
 2. We can use the <center> tag but it shows red since it is a legacy tag we nolonger use it instead we rely on css for styling
 
 
+
+## jan_29_mfakih
 ---------------------------------------------------
+
+Hello again, today we will be discussing divs and spans
+we will then explore how we could 
+
+
+
+1. <div>: a div will take the entire width of the screen
+    when the end of the page is reached it jumps abruptly to a new line
+
+2. 
