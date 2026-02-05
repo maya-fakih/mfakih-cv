@@ -1,17 +1,87 @@
 <html>
     <head>
-        <title>S2-HTML and Divs</title>
+        <title>S3-CSS Basics</title>
     </head>
-    <body style="font-family: fangsong;margin:0px" ;="" font:="">
-
-        <div style="height: 40px;background-color: #8080ff;color: white; align-content: center; text-align:left;">
-            <a href="../index.html" style="color: white; text-decoration: none;">Back to Main Page</a>
+    <body style="margin:0px;
+        font-family: Math;
+        font-size:12px;">
+        
+        <center><h2>Styling divs with css</h2></center>
+        <h3>Div 100% width and 30px height as header</h3>
+        <div style="height: 20px;
+                    background: #25537e;
+                    color: white;
+                    line-height: 20px;
+                    padding:5px;
+                    font-family: monospace;
+                    text-align: right;">
+            <a href="index.html" style="color:white; 
+                                        text-decoration: none;">HOME</a>
         </div>
 
-        <center>
-            <h1>Styling Divs in CSS</h1>
-        </center>
-        <h3>Div with 100% width</h3>
-        <div></div>
+        <h3>Div with margin, border and padding</h3>
+        <div style="margin: 5px;
+                    border: 2px solid black;
+                    padding: 5px;">
+            Margin: 5px space outside the border<br>
+            Border: 2px border of the div<br>
+            Padding: 5px space inside the border<br>
+        </div>
+
+        <h3>2 Divs 50% width padding, margin and border</h3>  
+        <div style="border: 2px solid black;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 50%;
+                    float: left;">
+        Left Div
+        </div>
+        <div style="border: 2px solid black;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 50%;
+                    float:right;">
+        Right Div
+        </div>
+
+        <!-- <h3>2 Divs 50% width single line</h3>         -->
+        <div style="width: 50%;
+                    float: left;">
+            <div style="border: 2px solid black;
+                        padding: 5px;
+                        margin: 5px;">
+            Left Div
+            </div>
+        </div>
+        
+        <div style="width: 50%;
+                    float: right;">
+            <div style="border: 2px solid black;
+                        padding: 5px;
+                        margin: 5px;">
+            Right Div
+            </div>
+        </div>
+
+        <div style="width: 50%;
+                    float: left;">
+        <div style="width: 50%;
+                    float: left;">
+            <div style="border: 2px solid black;
+                        padding: 5px;
+                        margin: 5px;">
+            Left Div
+            </div>
+        </div>
+        
+        <div style="width: 50%;
+                    float: right;">
+            <div style="border: 2px solid black;
+                        padding: 5px;
+                        margin: 5px;">
+            Right Div
+            </div>
+        </div>
+        </div>
     </body>
 </html>
