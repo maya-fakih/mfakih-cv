@@ -6,7 +6,7 @@
     <title>Maya Fakih | Projects Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Same CSS variables and base styles as index.html */
+        /* Same variables and base styles */
         :root {
             --primary-color: #00b4d8;
             --secondary-color: #0077b6;
@@ -16,7 +16,7 @@
             --text-light: #e0e0e0;
             --text-muted: #aaaaaa;
             --border-color: #2a2a2a;
-            --github-color: #f5f5f5;
+            --gpa-highlight: #ffd700;
         }
         
         * {
@@ -43,7 +43,7 @@
             min-height: 95vh;
         }
         
-        /* Sidebar (same as index) */
+        /* Sidebar */
         .sidebar {
             width: 300px;
             background: var(--sidebar-bg);
@@ -147,10 +147,6 @@
             margin-top: 10px;
         }
         
-        .back-link i {
-            color: var(--primary-color);
-        }
-        
         /* Main Content */
         .main-content {
             flex: 1;
@@ -185,9 +181,12 @@
             font-size: 24px;
             color: white;
             margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
-        /* Project Cards (Full Detail) */
+        /* Project Cards */
         .project-full {
             background: var(--card-bg);
             border-radius: 12px;
@@ -251,7 +250,7 @@
         .tech-tag {
             background: rgba(0, 180, 216, 0.1);
             color: var(--primary-color);
-            padding: 5px 12px;
+            padding: 5px 15px;
             border-radius: 20px;
             font-size: 13px;
             border: 1px solid rgba(0, 180, 216, 0.3);
@@ -323,7 +322,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- SIDEBAR (same as index but with back link) -->
+        <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="profile-img">
                 <img src="profile.png" alt="Maya Fakih">
@@ -354,271 +353,177 @@
                         <i class="fas fa-arrow-left"></i>
                         <span>← Back to Main</span>
                     </a>
-                    <a href="#robotics" class="nav-link">
+                    <a href="#fire-suppression" class="nav-link">
+                        <i class="fas fa-fire"></i>
+                        <span>Fire Extinguisher</span>
+                    </a>
+                    <a href="#amazeing" class="nav-link">
+                        <i class="fas fa-maze"></i>
+                        <span>A-maze-ing</span>
+                    </a>
+                    <a href="#pushswap" class="nav-link">
+                        <i class="fas fa-sort"></i>
+                        <span>Push_swap</span>
+                    </a>
+                    <a href="#domineering" class="nav-link">
+                        <i class="fas fa-chess"></i>
+                        <span>Domineering</span>
+                    </a>
+                    <a href="#industrial-robots" class="nav-link">
                         <i class="fas fa-robot"></i>
-                        <span>Robotics & AI</span>
+                        <span>Industrial Robots</span>
                     </a>
-                    <a href="#industrial-projects" class="nav-link">
-                        <i class="fas fa-industry"></i>
-                        <span>Industrial</span>
-                    </a>
-                    <a href="#embedded" class="nav-link">
-                        <i class="fas fa-microchip"></i>
-                        <span>Embedded</span>
-                    </a>
-                    <a href="#humanitarian" class="nav-link">
+                    <a href="#red-cross" class="nav-link">
                         <i class="fas fa-hands-helping"></i>
-                        <span>Humanitarian</span>
+                        <span>Red Cross</span>
                     </a>
                 </div>
             </div>
         </div>
         
-        <!-- MAIN CONTENT - FULL PROJECTS -->
+        <!-- MAIN CONTENT -->
         <div class="main-content">
             <a href="index.html" class="back-to-home">
                 <i class="fas fa-arrow-left"></i> Back to Main Profile
             </a>
             
-            <h1 class="section-title">Full Project Portfolio</h1>
-            <p style="color: var(--text-muted); margin-bottom: 40px;">Click on any project title to view the GitHub repository.</p>
+            <h1 class="section-title">Project Portfolio</h1>
+            <p style="color: var(--text-muted); margin-bottom: 40px;">Click the GitHub buttons to view the repositories.</p>
             
-            <!-- Robotics & AI Section -->
-            <h2 id="robotics" class="section-subtitle"><i class="fas fa-robot" style="color: var(--primary-color); margin-right: 10px;"></i>Robotics & AI Projects</h2>
-            
-            <!-- Project 1: FYP -->
+            <!-- Project 1: Smart Fire Extinguisher (FYP) -->
             <div id="fire-suppression" class="project-full">
                 <div class="project-header">
-                    <h3>🔥 Autonomous AI-Driven Fire Suppression System (FYP)</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/fire-suppression-fyp')">
-                        <i class="fab fa-github"></i> View Code
+                    <h3>🔥 Smart Fire Extinguisher (FYP)</h3>
+                    <a href="https://github.com/maya-fakih/smart_fire_extinguisher" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub Repo
                     </a>
                 </div>
                 <div class="project-tech">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">YOLOv8</span>
                     <span class="tech-tag">Raspberry Pi 5</span>
+                    <span class="tech-tag">Computer Vision</span>
                     <span class="tech-tag">Inverse Kinematics</span>
                     <span class="tech-tag">Linear Regression</span>
+                    <span class="tech-tag">Edge Detection</span>
                 </div>
-                <p class="project-description">Intelligent mechatronic system for rapid fire detection and localized suppression.</p>
+                <p class="project-description">Intelligent mechatronic system for rapid fire detection and localized suppression using AI and robotics.</p>
                 <ul class="project-details">
                     <li><strong>Computer Vision:</strong> Integrated YOLOv8 for real-time fire/smoke classification and Edge Detection via AI PI Camera for precise environmental mapping.</li>
                     <li><strong>Robotics & Control:</strong> Developed Inverse Kinematics for a 2-DOF nozzle system ensuring millimetric accuracy in targeting fire sources.</li>
                     <li><strong>Predictive Modeling:</strong> Implemented Linear Regression model to dynamically adjust solenoid valve pressure based on depth and distance metrics.</li>
                     <li><strong>Safety Intelligence:</strong> Built secondary AI model for Fire Type Identification (Class A, B, C) ensuring appropriate suppression response.</li>
+                    <li><strong>Hardware:</strong> Raspberry Pi 5, PI Camera, solenoid valves, servo motors, water pump system.</li>
                 </ul>
             </div>
             
-            <!-- Project 2: 6-DOF Robotic Arm -->
-            <div id="6dof-arm" class="project-full">
-                <div class="project-header">
-                    <h3>🦾 6-DOF Robotic Arm (Kinematics & Control)</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/6dof-robotic-arm')">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">C++</span>
-                    <span class="tech-tag">ESP32</span>
-                    <span class="tech-tag">Bluetooth</span>
-                    <span class="tech-tag">DH Convention</span>
-                    <span class="tech-tag">Ultrasonic</span>
-                </div>
-                <p class="project-description">Developed a 6-Degree of Freedom arm using DH (Denavit-Hartenberg) Convention.</p>
-                <ul class="project-details">
-                    <li><strong>Control Modes:</strong> Implemented manual Bluetooth control (via smartphone) and autonomous "search-and-sort" mode.</li>
-                    <li><strong>Sensors:</strong> Integrated ultrasonic sensors for object detection and sorting logic.</li>
-                    <li><strong>Hardware:</strong> Used ESP32 as main controller, with servo motors and Bluetooth module HC-05.</li>
-                </ul>
-            </div>
-            
-            <!-- Project 3: A-maze-ing AI -->
+            <!-- Project 2: A-maze-ing AI -->
             <div id="amazeing" class="project-full">
                 <div class="project-header">
                     <h3>🧩 A-maze-ing: Agentic AI Search</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/amazeing-ai')">
-                        <i class="fab fa-github"></i> View Code
+                    <a href="https://github.com/maya-fakih/A-maze-ing" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub Repo
                     </a>
                 </div>
                 <div class="project-tech">
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">BFS/DFS</span>
+                    <span class="tech-tag">BFS</span>
+                    <span class="tech-tag">DFS</span>
                     <span class="tech-tag">A*</span>
                     <span class="tech-tag">UCS</span>
-                    <span class="tech-tag">Wilson/Prim</span>
+                    <span class="tech-tag">Wilson's Algorithm</span>
+                    <span class="tech-tag">Prim's Algorithm</span>
+                    <span class="tech-tag">CSP</span>
                 </div>
-                <p class="project-description">Maze generation and solving using advanced algorithms and agentic AI.</p>
+                <p class="project-description">Advanced maze generation and solving using multiple algorithms with agentic AI behavior.</p>
                 <ul class="project-details">
-                    <li><strong>Maze Generation:</strong> Implemented Wilson's spanning trees, Prim's algorithm, and DFS for complex branching mazes.</li>
-                    <li><strong>Pathfinding Agents:</strong> Engineered search agents to solve mazes using BFS, DFS, A*, and UCS algorithms.</li>
-                    <li><strong>Focus:</strong> Agentic behavior and Constraint Satisfaction Problems (CSP).</li>
+                    <li><strong>Maze Generation:</strong> Implemented Wilson's spanning trees, Prim's algorithm, and DFS for complex branching mazes with varying difficulty levels.</li>
+                    <li><strong>Pathfinding Agents:</strong> Engineered intelligent agents to solve mazes using BFS (optimal for unweighted), DFS (exploration-focused), A* (heuristic-driven), and UCS (cost-optimal).</li>
+                    <li><strong>Constraint Satisfaction:</strong> Applied CSP techniques to ensure agents could navigate around obstacles and dead-ends efficiently.</li>
+                    <li><strong>Visualization:</strong> Created simple graphical output to visualize maze generation and agent pathfinding in real-time.</li>
                 </ul>
             </div>
             
-            <!-- Project 4: Push_swap -->
-            <div class="project-full">
+            <!-- Project 3: Push_swap -->
+            <div id="pushswap" class="project-full">
                 <div class="project-header">
                     <h3>📊 Push_swap: Optimized Sorting Algorithms</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/push_swap')">
-                        <i class="fab fa-github"></i> View Code
+                    <a href="https://github.com/maya-fakih/push_swap" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub Repo
                     </a>
                 </div>
                 <div class="project-tech">
                     <span class="tech-tag">C</span>
                     <span class="tech-tag">Algorithms</span>
+                    <span class="tech-tag">Data Structures</span>
                     <span class="tech-tag">Memory Management</span>
                     <span class="tech-tag">42 Norm</span>
                 </div>
-                <p class="project-description">Intensive data structures and algorithms project from 42 curriculum.</p>
+                <p class="project-description">High-efficiency sorting algorithm project from 42 curriculum using two stacks and limited instruction set.</p>
                 <ul class="project-details">
-                    <li><strong>Algorithmic Logic:</strong> Developed high-efficiency sorting algorithm using two stacks and limited instruction set.</li>
-                    <li><strong>Optimization:</strong> Achieved minimal instruction counts for 500+ integers through complexity analysis.</li>
-                    <li><strong>Memory Integrity:</strong> Engineered in pure C with zero memory leaks, strict adherence to 42 Norm.</li>
+                    <li><strong>Algorithm Design:</strong> Developed a custom sorting algorithm to organize a random stack of integers using only two stacks and 11 allowed operations (sa, sb, ss, pa, pb, ra, rb, rr, rra, rrb, rrr).</li>
+                    <li><strong>Optimization:</strong> Achieved minimal instruction counts: less than 700 operations for 100 integers, less than 5500 for 500 integers through complexity analysis and pre-sorting logic.</li>
+                    <li><strong>Memory Integrity:</strong> Engineered in pure C with zero memory leaks, no dangling pointers, and strict adherence to 42 Norm (function length, line count, etc.).</li>
+                    <li><strong>Testing:</strong> Implemented comprehensive error handling and edge case validation (duplicates, already sorted, reverse sorted).</li>
                 </ul>
             </div>
             
-            <!-- Industrial Automation Section -->
-            <h2 id="industrial-projects" class="section-subtitle" style="margin-top: 50px;"><i class="fas fa-industry" style="color: var(--primary-color); margin-right: 10px;"></i>Industrial Automation Projects</h2>
-            
-            <!-- Project 5: Juice Factory -->
-            <div id="juice-factory" class="project-full">
+            <!-- Project 4: Domineering Game AI -->
+            <div id="domineering" class="project-full">
                 <div class="project-header">
-                    <h3>🧃 Juice Factory Automation - Fill & Cap System</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/juice-factory-plc')">
-                        <i class="fab fa-github"></i> View Code
+                    <h3>🎮 Domineering Game with AI Opponents</h3>
+                    <a href="https://github.com/maya-fakih/domineering" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub Repo
                     </a>
                 </div>
                 <div class="project-tech">
-                    <span class="tech-tag">Schneider PLC</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Game AI</span>
+                    <span class="tech-tag">Minimax</span>
+                    <span class="tech-tag">Alpha-Beta Pruning</span>
+                    <span class="tech-tag">GUI</span>
+                </div>
+                <p class="project-description">Implementation of the Domineering board game with AI opponents and simple visualization.</p>
+                <ul class="project-details">
+                    <li><strong>Game Logic:</strong> Implemented full rules of Domineering where players alternately place dominoes vertically (Player 1) or horizontally (Player 2) on a grid.</li>
+                    <li><strong>AI Opponents:</strong> Built multiple AI difficulty levels using Minimax algorithm with Alpha-Beta pruning for optimal move selection.</li>
+                    <li><strong>Strategy Analysis:</strong> Incorporated game tree search and heuristic evaluation functions to assess board positions.</li>
+                    <li><strong>Visualization:</strong> Created simple grid-based interface showing current board state and available moves.</li>
+                    <li><strong>Modes:</strong> Supports Player vs Player, Player vs AI, and AI vs AI modes for strategy analysis.</li>
+                </ul>
+            </div>
+            
+            <!-- Project 5: Industrial Robots FP -->
+            <div id="industrial-robots" class="project-full">
+                <div class="project-header">
+                    <h3>🏭 Industrial Robots & Automation (FP)</h3>
+                    <a href="https://github.com/maya-fakih/industrial_robots_fp" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub Repo
+                    </a>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">PLC</span>
+                    <span class="tech-tag">Schneider Electric</span>
                     <span class="tech-tag">Ladder Logic</span>
                     <span class="tech-tag">SFC</span>
-                    <span class="tech-tag">Sensors</span>
-                </div>
-                <p class="project-description">Complete automation of a juice bottling line using Schneider Electric PLCs.</p>
-                <ul class="project-details">
-                    <li><strong>Process:</strong> Automated filling and capping of bottles with precise volume control.</li>
-                    <li><strong>Programming:</strong> Implemented using Ladder Logic for continuous processes and SFC for sequential operations.</li>
-                    <li><strong>Safety:</strong> Integrated emergency stops and fault detection routines.</li>
-                </ul>
-            </div>
-            
-            <!-- Project 6: Sorting System -->
-            <div class="project-full">
-                <div class="project-header">
-                    <h3>📦 Industrial Sorting System</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/sorting-system-plc')">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">PLC</span>
-                    <span class="tech-tag">Sensors</span>
-                    <span class="tech-tag">Actuators</span>
                     <span class="tech-tag">Structured Text</span>
-                </div>
-                <p class="project-description">Automated material sorting line based on object properties.</p>
-                <ul class="project-details">
-                    <li><strong>Sensors:</strong> Used inductive, capacitive, and optical sensors to detect material type.</li>
-                    <li><strong>Actuation:</strong> Pneumatic cylinders divert items to appropriate bins.</li>
-                    <li><strong>Programming:</strong> Combination of Ladder, Structured Text, and SFC for complete control.</li>
-                </ul>
-            </div>
-            
-            <!-- Project 7: Robotic Transfer Arm -->
-            <div class="project-full">
-                <div class="project-header">
-                    <h3>🏭 Automated Robotic Transfer Arm (PLC Controlled)</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/transfer-arm-plc')">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">SFC</span>
-                    <span class="tech-tag">PLC</span>
                     <span class="tech-tag">Pneumatics</span>
                 </div>
-                <p class="project-description">SFC-controlled robotic arm for moving structures from location A to B.</p>
+                <p class="project-description">Comprehensive industrial automation project featuring PLC-controlled robotic systems and sorting lines.</p>
                 <ul class="project-details">
-                    <li><strong>Sequence Control:</strong> Implemented using Sequential Function Chart (SFC) for clear step-by-step operations.</li>
-                    <li><strong>Integration:</strong> Coordinated with conveyor belts and position sensors.</li>
-                    <li><strong>Application:</strong> Industrial material handling and assembly line transfer.</li>
+                    <li><strong>Robotic Transfer Arm:</strong> Designed SFC (Sequential Function Chart) control for a robotic arm moving structures from location A to B with precise positioning.</li>
+                    <li><strong>Material Sorting System:</strong> Implemented sensor-based sorting using inductive, capacitive, and optical sensors with pneumatic actuators.</li>
+                    <li><strong>Programming:</strong> Developed control logic using Ladder, Structured Text, and SFC on Schneider Electric PLCs.</li>
+                    <li><strong>Safety Systems:</strong> Integrated emergency stops, interlocks, and fault detection routines for industrial safety compliance.</li>
+                    <li><strong>Documentation:</strong> Created complete system documentation including wiring diagrams, flowcharts, and operation manuals.</li>
                 </ul>
             </div>
             
-            <!-- Embedded Systems Section -->
-            <h2 id="embedded" class="section-subtitle" style="margin-top: 50px;"><i class="fas fa-microchip" style="color: var(--primary-color); margin-right: 10px;"></i>Embedded & Low-Level Projects</h2>
-            
-            <!-- Project 8: PIC18 Assembly Safe -->
-            <div class="project-full">
-                <div class="project-header">
-                    <h3>🔐 PIC18F42K22 Secure EEPROM Safe (Assembly)</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/pic18-assembly-safe')">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Assembly</span>
-                    <span class="tech-tag">PIC18F42K22</span>
-                    <span class="tech-tag">MPLAB X</span>
-                    <span class="tech-tag">EEPROM</span>
-                </div>
-                <p class="project-description">Secure digital safe using PIC18 microcontroller, programmed entirely in Assembly.</p>
-                <ul class="project-details">
-                    <li><strong>Platform:</strong> Developed with MPLAB X IDE, programmed in Assembly language.</li>
-                    <li><strong>Features:</strong> EEPROM memory for password storage, keypad input, LCD display, and relay-controlled lock.</li>
-                    <li><strong>Security:</strong> Implemented timing attacks protection and limited retry attempts.</li>
-                </ul>
-            </div>
-            
-            <!-- Project 9: VHDL Arithmetic Logic -->
-            <div class="project-full">
-                <div class="project-header">
-                    <h3>⚡ VHDL Arithmetic Logic Unit</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/vhdl-alu')">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">VHDL</span>
-                    <span class="tech-tag">FPGA</span>
-                    <span class="tech-tag">Logic Circuits</span>
-                </div>
-                <p class="project-description">Coded a functional arithmetic flow program using logic circuits and data flows in VHDL.</p>
-                <ul class="project-details">
-                    <li><strong>Operations:</strong> Addition, subtraction, multiplication, and logical operations.</li>
-                    <li><strong>Design:</strong> Implemented using dataflow and behavioral modeling.</li>
-                    <li><strong>Testing:</strong> Simulated with testbenches to verify all operations.</li>
-                </ul>
-            </div>
-            
-            <!-- Project 10: MOSFET Logic Gates -->
-            <div class="project-full">
-                <div class="project-header">
-                    <h3>🔋 MOSFET Logic Gate Design</h3>
-                    <a href="#" class="github-link" onclick="alert('Replace with your GitHub link: github.com/maya-fakih/mosfet-logic')">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">MOSFET</span>
-                    <span class="tech-tag">Digital Logic</span>
-                    <span class="tech-tag">Circuit Design</span>
-                </div>
-                <p class="project-description">Rebuilt fundamental logic gates using MOSFET transistors from first principles.</p>
-                <ul class="project-details">
-                    <li><strong>Gates:</strong> Designed and tested NOT, NAND, NOR, XOR using discrete MOSFETs.</li>
-                    <li><strong>Analysis:</strong> Measured switching characteristics and power consumption.</li>
-                </ul>
-            </div>
-            
-            <!-- Humanitarian Section -->
-            <h2 id="humanitarian" class="section-subtitle" style="margin-top: 50px;"><i class="fas fa-hands-helping" style="color: var(--primary-color); margin-right: 10px;"></i>Humanitarian & Leadership</h2>
-            
-            <div id="red-cross" class="project-full">
+            <!-- Humanitarian Section - Fixed -->
+            <div id="red-cross" class="project-full" style="border-left-color: #ff6b6b;">
                 <div class="project-header">
                     <h3>🚑 Lebanese Red Cross - Disaster Management Unit</h3>
-                    <a href="#" class="github-link" onclick="alert('Link to Red Cross documentation or certificate')">
+                    <a href="#" class="github-link" style="background: #8b4513;" onclick="alert('Red Cross documentation and certifications available upon request')">
                         <i class="fas fa-certificate"></i> Credentials
                     </a>
                 </div>
@@ -627,24 +532,26 @@
                     <span class="tech-tag">WASH</span>
                     <span class="tech-tag">Shelter</span>
                     <span class="tech-tag">EcoSec</span>
+                    <span class="tech-tag">Community Engagement</span>
+                    <span class="tech-tag">Crisis Logistics</span>
                 </div>
-                <p class="project-description">Managed crisis logistics for thousands of displaced beneficiaries during the 2025 crisis.</p>
+                <p class="project-description">Active volunteer in Disaster Management Unit, managing crisis logistics and coordination during emergencies.</p>
                 <ul class="project-details">
-                    <li><strong>Coordination:</strong> Liaised between NGOs, local government, and international aid organizations.</li>
-                    <li><strong>Logistics:</strong> Managed distribution of shelter, food, and medical supplies to 1000+ families.</li>
-                    <li><strong>Certifications:</strong> First Aid, Community Engagement, DM Induction, Shelter, WASH, and EcoSec.</li>
+                    <li><strong>Crisis Management:</strong> Managed logistics for thousands of displaced beneficiaries during the 2025 crisis, coordinating shelter, food, and medical supplies.</li>
+                    <li><strong>Coordination:</strong> Liaised between NGOs, local government, and international aid organizations for efficient resource distribution.</li>
+                    <li><strong>Training:</strong> Completed intensive certifications including First Aid, Community Engagement, Disaster Management Induction, Shelter Management, WASH (Water, Sanitation, Hygiene), and EcoSec (Economic Security).</li>
+                    <li><strong>Leadership:</strong> Led teams of volunteers during emergency responses, ensuring safety protocols and efficient operations.</li>
                 </ul>
             </div>
             
             <footer>
-                <p>Maya Fakih © 2026 | Full Project Portfolio | Replace # links with your actual GitHub URLs</p>
-                <p style="font-size: 12px; margin-top: 10px; color: #555;">⬆️ Click any GitHub button and replace the alert with your actual repository link</p>
+                <p>Maya Fakih © 2026 | Complete Project Portfolio | All GitHub repositories linked</p>
             </footer>
         </div>
     </div>
     
     <script>
-        // Smooth scroll for navigation
+        // Smooth scroll
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function(e) {
                 if (this.getAttribute('href').startsWith('#')) {
